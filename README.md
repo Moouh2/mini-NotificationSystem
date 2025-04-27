@@ -19,9 +19,11 @@ mini-NotificationSystem/
 │
 ├── notifications/
 │   ├── __init__.py
+|   ├── __main__.py
+│   ├── __pip-runner__.py
 │   ├── notification_manager.py
 │   ├── newsletter.py
-│   ├── sms_adapter.py
+│   └── sms_adapter.py
 │
 ├── main.py                # fichier principal
 ├── requirements.txt       # Liste des dépendances
