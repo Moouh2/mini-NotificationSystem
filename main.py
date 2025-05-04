@@ -9,7 +9,7 @@ manager = NotificationManager.get_instance()
 sms_adapter = SMSAdapter()
 
 # 3. Observer - Newsletter et Abonnés
-Newsletter = Newsletter()
+newsletter_system = Newsletter()
 
 # Boucle interactive
 while True:
@@ -27,12 +27,12 @@ while True:
     elif choix == "2":
         user_name = input("Nom de l'utilisateur : ")
         new_user = Subscriber(user_name)
-        Newsletter.subscribe(new_user)
+        newsletter_system.subscribe(new_user)
         print(f"{user_name} abonné(e) !")
 
     elif choix == "3":
         message = input("Message de la newsletter : ")
-        N1ewsletter.notify_all(message)  # Observer
+        newsletter_system.notify_all(message)  # Observer
 
     elif choix == "4":
         break
